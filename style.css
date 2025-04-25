@@ -19,7 +19,6 @@
 }
 
 body {
-  padding-top: 5rem;
   min-height: 100vh;
   width: 100vw;
   overflow-x: hidden;
@@ -81,7 +80,7 @@ nav a {
   gap: 2rem;
   background-color: var(--dark-bg);
   padding: 3rem 5vw;
-  height: 90vh;
+  height: 100vh;
 }
 
 .hero-texts {
