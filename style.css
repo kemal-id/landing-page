@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  padding-top: 5rem;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.heading {
+  display: flex;
+  background-color: #1f2937;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 5rem;
+}
+
+.logo {
+  display: flex;
+  flex: 1;
+  align-items: center;
+
+  gap: 1rem;
+  color: #f9faf8;
+}
+
+#butterfly {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 18px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #e5e7eb;
+}
