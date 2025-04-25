@@ -1,26 +1,28 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid white; */
 }
 
-body{
-  margin: 0;
-  padding: 0;
+body {
   padding-top: 5rem;
   min-height: 100vh;
   width: 100vw;
   overflow-x: hidden;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  background-color: #1f58a8;
 }
+
+/* Navbar section */
 
 .heading {
   display: flex;
   background-color: #1f2937;
-  padding: 1rem;
+  padding: 1rem 10vw;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: 5rem;
 }
 
@@ -39,8 +41,6 @@ body{
   border-radius: 50%;
 }
 
-
-
 nav ul {
   list-style-type: none;
   height: 100%;
@@ -50,7 +50,70 @@ nav ul {
   font-size: 18px;
 }
 
-nav a{
+nav a {
   text-decoration: none;
   color: #e5e7eb;
+}
+
+/* Hero section */
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #1f2937;
+  padding: 3rem 5vw;
+  height: 90vh;
+} 
+
+
+.hero-texts {
+  flex: 1 1 250px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: start;
+  max-width: 450px;
+}
+
+.hero-texts h1{
+  color:#f9faf8;
+  margin-bottom: 1rem;
+}
+
+.hero-texts p{
+  color: #e5e7eb;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
+.hero-button{
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  color: #e5e7eb;
+
+  border-radius: 8px;
+  background-color: rgba(100,100,100,0.2);
+  border:#e5e7eb solid 1px;
+  cursor: pointer;
+}
+
+.hero-button:hover{
+  background-color: rgba(10,10,10,0.5);
+}
+
+.hero-button:active {
+  background-color: #1f2937;
+}
+
+.img-container {
+  align-content: center;
+}
+.hero img {
+  flex: 0 1 auto;
+  width: 700px;
+  max-width: 100%;
+  height: auto;
+
 }
