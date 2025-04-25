@@ -3,8 +3,19 @@
   padding: 0;
   box-sizing: border-box;
   /* border: 1px solid gray; */
+}
 
-  /* --black-text: #353535; */
+:root{
+  --dark-bg: #1f2937;
+  --light-bg: #93c0ff;
+  --gray-bg: #cfcfcf;
+  --light-text: #f9faf8;
+  --gray-text: #e5e7eb;
+  --cta-color: #3882f6;
+
+  --second-font-size: 36px;
+  --third-font-size: 24px;
+  --fourth-font-size: 18px;
 }
 
 body {
@@ -13,14 +24,14 @@ body {
   width: 100vw;
   overflow-x: hidden;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  background-color: #1f58a8;
+  /* background-color: #1f58a8; */
 }
 
 /* Navbar section */
 
 .heading {
   display: flex;
-  background-color: #1f2937;
+  background-color: var(--dark-bg);
   padding: 1rem 10vw;
   position: fixed;
   top: 0;
@@ -28,13 +39,17 @@ body {
   height: 5rem;
 }
 
+.hero-link {
+  flex: 1;
+  text-decoration: none;
+}
+
 .logo {
   display: flex;
-  flex: 1;
   align-items: center;
 
   gap: 1rem;
-  color: #f9faf8;
+  color: var(--light-text);
 }
 
 #butterfly {
@@ -54,7 +69,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #e5e7eb;
+  color: var(--gray-text);
 }
 
 /* Hero section */
@@ -64,7 +79,7 @@ nav a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  background-color: #1f2937;
+  background-color: var(--dark-bg);
   padding: 3rem 5vw;
   height: 90vh;
 }
@@ -79,25 +94,25 @@ nav a {
 }
 
 .hero-texts h1 {
-  color: #f9faf8;
+  color: var(--light-text);
   font-size: 48px;
   margin-bottom: 1rem;
 }
 
 .hero-texts p {
-  color: #e5e7eb;
+  color: var(--gray-text);
   margin-bottom: 1rem;
-  font-size: 18px;
+  font-size: var(--fourth-font-size);
 }
 
 .hero-button {
   padding: 0.5rem 1rem;
   font-size: 16px;
-  color: #f9faf8;
+  color: var(--light-text);
 
   border-radius: 8px;
-  background-color: #3882f6;
-  border: #e5e7eb solid 1px;
+  background-color: var(--cta-color);
+  border: var(--gray-text) solid 1px;
   cursor: pointer;
 }
 
@@ -106,7 +121,7 @@ nav a {
 }
 
 .hero-button:active {
-  background-color: #1f2937;
+  background-color: var(--dark-bg);
 }
 
 .img-container {
@@ -123,18 +138,18 @@ nav a {
 /* About section */
 
 .about {
-  background-color: #f9faf8;
+  background-color: var(--light-text);
   padding: 5rem 5vw;
 }
 
 .about h2 {
   text-align: center;
-  font-size: 36px;
-  font-weight: 900;
   margin: 1rem 0;
+  font-size: var(--second-font-size);
+  font-weight: 900;
   /* color: var(--black-text); */
-  color: #353535;
-  margin-bottom: 3rem ;
+  color: var(--dark-bg);
+  margin-bottom: 3rem;
 }
 
 .fig-container {
@@ -165,7 +180,7 @@ nav a {
 }
 
 figcaption {
-  font-size: 18px;
-  color: #353535;
+  font-size: var(--fourth-font-size);
+  color: var(--dark-bg);
   text-align: center;
 }
