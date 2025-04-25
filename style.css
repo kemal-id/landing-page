@@ -209,3 +209,72 @@ figcaption {
   font-size: var(--third-font-size);
   margin-top: 1rem;
 }
+
+
+/* Footer section */
+
+#footer {
+  padding: 5rem 5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 5rem;
+  gap: 3rem;
+  background-color: var(--cta-color);
+  color: var(--light-text);
+  border-radius: 16px;
+  height: auto;
+}
+
+.cta-text{
+  flex: 0 1 auto;
+  max-width: 500px;
+
+}
+
+.cta-text h3{
+  font-size: var(--third-font-size);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.cta-text p{
+  font-size: 16px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.cta-container button {
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  background-color: var(--cta-color);
+  border: 2px solid var(--gray-text);
+  border-radius: 8px;
+  color: var(--light-text);
+  flex: 0 1 auto;
+  max-width: 10rem;
+  cursor: pointer;
+}
+
+.cta-container button:active{
+  background-color: var(--dark-bg);
+}
+
+
+/* Copyright section */
+
+.copyright{
+  background-color: var(--dark-bg);
+  padding: 2.5rem 0;
+  font-size: var(--fourth-font-size);
+  font-weight: lighter;
+  color: var(--gray-text);
+  text-align: center;
+  vertical-align: middle;
+}
