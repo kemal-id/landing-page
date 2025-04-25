@@ -5,7 +5,7 @@
   /* border: 1px solid gray; */
 }
 
-:root{
+:root {
   --dark-bg: #1f2937;
   --light-bg: #93c0ff;
   --gray-bg: #cfcfcf;
@@ -24,6 +24,14 @@ body {
   overflow-x: hidden;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   /* background-color: #1f58a8; */
+}
+
+h2{
+  margin-bottom: 3rem;
+  color: var(--dark-bg);
+  font-size: var(--second-font-size);
+  font-weight: 900;
+  text-align: center;
 }
 
 /* Navbar section */
@@ -106,7 +114,7 @@ nav a {
 
 .hero-button {
   padding: 0.5rem 1rem;
-  font-size: 16px;
+  font-size: var(--fourth-font-size);
   color: var(--light-text);
 
   border-radius: 8px;
@@ -142,13 +150,7 @@ nav a {
 }
 
 .about h2 {
-  text-align: center;
-  margin: 1rem 0;
-  font-size: var(--second-font-size);
-  font-weight: 900;
-  /* color: var(--black-text); */
-  color: var(--dark-bg);
-  margin-bottom: 3rem;
+
 }
 
 .fig-container {
@@ -182,4 +184,18 @@ figcaption {
   font-size: var(--fourth-font-size);
   color: var(--dark-bg);
   text-align: center;
+}
+
+
+/* Quotes section */
+
+.quotes{
+  padding: 5rem 5vw;
+}
+
+.quotes h2{
+  font-size: var(--second-font-size);
+  color: var(--dark-bg);
+  text-align: center;
+  
 }
